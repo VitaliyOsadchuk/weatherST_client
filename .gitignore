@@ -1,0 +1,25 @@
+# dependencies
+/node_modules
+
+# build output
+/dist
+/build
+
+# environment variables
+.env
+.env.*
+
+# local dev tools
+.vscode/
+.idea/
+*.log
+*.tsbuildinfo
+
+# system files
+.DS_Store
+Thumbs.db
+
+# lockfiles (optional)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.app-container {
+  display: flex;
+  height: 100%;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  margin-left: 5%;
+  background-color: #f8f9fa;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  margin-left: 5%; /* простір для сайдбара */
+  background-color: #f8f9fa;
+  transition: margin-left 0.3s ease;
+}
+

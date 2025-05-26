@@ -1,0 +1,69 @@
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+
+.chart-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 90%;
+    height: auto;
+}
+
+.chart-container h2 {
+  margin-bottom: 5vh;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  color: #4a4b4b;
+  text-align: center;
+}
+
+.chart-container h3 {
+  display: flex;
+  margin-bottom: 5px;
+  font-size: clamp(1.1rem, 1.5vw, 2rem);
+  color: #4a4b4b;
+  text-align: center;
+}
+
+.recharts-default-legend {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 3vw;
+  font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+}
+
+
+.range-selector{
+  margin-top:1vh ;
+  width: 90%;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+}
+
+.range-selector button{
+  width: 13%;
+  border: 2px solid #4A628A;
+  cursor: pointer;
+  font-size: clamp(0.7rem, 1.2vw, 1.3rem);
+}
+
+.range-selector button:first-child{
+  border-radius: 15px 0 0 15px;
+}
+
+.range-selector button:last-child{
+  border-radius: 0 15px 15px 0;
+}
+
+.range-selector button.active {
+  background-color: #7AB2D3; 
+  color: #0c1010;
+}
