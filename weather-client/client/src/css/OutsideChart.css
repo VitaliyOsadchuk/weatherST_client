@@ -4,7 +4,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  padding: 2rem;
+  padding: 3vw;
 }
 
 .chart-wrapper{
@@ -67,3 +67,31 @@
   background-color: #7AB2D3; 
   color: #0c1010;
 }
+
+
+@media (max-width: 750px) {
+  .chart-container{
+    margin-left: 3vw;
+    width: 100%;
+  }
+
+  .chart-wrapper{
+    width: 95%;
+  }
+  .range-selector{
+    width: 100%;
+  }
+
+  .range-selector button{
+  width: 20%;
+  }
+
+  .recharts-default-legend {
+  margin-left: 2vw !important;
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
+
+}
+

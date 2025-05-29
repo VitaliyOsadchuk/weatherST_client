@@ -1,0 +1,133 @@
+.main-container{
+    width: 100%;
+    height: 100%;
+}
+
+.forecast-container{
+    padding: 5% 6%;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    border: 4px solid #2bb0d1;
+    border-radius: 18px;
+    background-color: #A8F1FF;
+    padding-bottom: 5%;
+}
+
+h2{
+    font-size: clamp(1.5rem, 5vw, 4.5rem);
+    color: #4a4b4b;
+    text-align: center;
+}
+
+h3 {
+    font-size: clamp(1rem, 2.2vw, 2rem);
+    color: #4a4b4b;
+    text-align: center;
+}
+
+p{
+    font-size: clamp(0.9rem, 1.5vw, 1.5rem);
+    color: #4a4b4b;
+}
+
+.half-block p{
+    font-size: clamp(0.9rem, 1.5vw, 1.4rem);
+    width: 100%;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    color: #4a4b4b;
+    padding: 1% 2%;
+}
+
+.half-block p:first-of-type{
+    border-top: 2px solid #000;
+}
+
+.half-block p:last-of-type{
+    border-bottom: 0px solid #000;
+}
+
+.forecast-block{
+    width: 100%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.altitude-input{
+    width: 80%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.altitude-input input{
+    width: 60%;
+    text-align: center;
+    color: #4a4b4b;
+    border: 2px solid #000;
+    border-right: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+.altitude-input button{
+    width: 40%;
+    border: 2px solid #000;
+    border-radius: 8px;
+    border: 2px solid #000;
+    border-radius: 0 8px 8px 0;
+}
+
+input, button{
+    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+    color:#4a4b4b;
+    padding: 3px;
+}
+
+.left-right{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
+    margin-bottom: 2%;
+}
+
+.half-block{
+    border: 2px solid #000;
+    border-radius: 8px;
+    width: 48%;
+}
+
+button:hover, button:active{
+    background-color: #4ED7F1;
+}
+
+@media (max-width: 750px) {
+
+    .main-container{
+        margin-left: 5%;
+    }
+    .forecast-container{
+        width: 80%;
+    }
+
+    .left-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .half-block{
+    border: 2px solid #000;
+    width: 100%;
+    }
+
+    .altitude-input{
+        width: 100%;
+    }
+
+}

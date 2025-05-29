@@ -72,3 +72,10 @@
     text-shadow: -1px 1px 10px rgb(57, 188, 240);
     color: #213555;
 }
+
+/* mobile */
+@media (max-width: 750px) {
+  .sidebar.expanded{
+    width: 75vw;
+  }
+}

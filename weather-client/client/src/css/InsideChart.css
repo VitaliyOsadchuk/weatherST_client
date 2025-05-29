@@ -1,0 +1,10 @@
+@media (max-width: 750px) {
+    .chart-wrapper {
+    padding-right: 5vw;
+    }
+
+    .recharts-default-legend {
+    margin-left: 6vw !important;
+    width: 95%;
+    }
+}
