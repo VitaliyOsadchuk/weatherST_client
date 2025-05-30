@@ -63,6 +63,21 @@ function Forecast() {
 
       const [first, last] = raw;
 
+      //-----------------------------------------------------------------------------------------
+      const nowUTC = new Date();
+      const nowKiev = new Date(nowUTC.getTime() + 3 * 60 * 60 * 1000);
+      const lastTime = new Date(last.time);
+      const ageMs = nowKiev .getTime() - lastTime.getTime();
+
+      //console.log('Поточний час now:', nowKiev .toISOString());
+      //console.log('Час останнього запису:', last.time);
+      //console.log('Вік останнього запису (год):', (ageMs / (1000 * 60 * 60)).toFixed(2));
+
+      if (ageMs > 1.5 * 60 * 60 * 1000) {
+        return setForecast({ ua: 'Останній запис застарілий', en: 'Last record is outdated' });
+      }
+      //--------------------------------------------------------------------------------------------
+      
       if (new Date(first.time).getTime() === new Date(last.time).getTime()) {
         return setForecast({ ua: 'Недостатньо даних для прогнозу', en: 'Forecast unavailable' });
       }
